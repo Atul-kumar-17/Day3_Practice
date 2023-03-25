@@ -17,5 +17,15 @@ public class Main {
         }else{
             System.out.println("Employee is Absent daily wage is = 0");
         }
+//    Adding a part time employee
+        int partTime;
+        int fullTime;
+        if(randomCheck==1){
+            System.out.println("Employee is Part time ");
+        }else{
+            System.out.println("Employee is Full time");
+        }
+        int partTimeHrs=4;
+        System.out.println("Part time Employee daily Wage is = " +partTimeHrs*wagePerHrs);
     }
 }
