@@ -6,7 +6,10 @@ public class EmpMonthlySalary {
         int partTimeHrs = 4;
         int part_Time = 1;
         int full_Time = 2;
-        for (int day = 0; day <= totalWorkingDays; day++) {
+        int empMaxHrs=100;
+        int totalWage=empMaxHrs*wagePerHrs;
+        while(empHrs<=empMaxHrs && day <= totalWorkingDays ) {
+            day++;
             int empCheck = (int) Math.floor(Math.random() * 10) % 3;
             switch (empCheck) {
                 case 0:
@@ -19,6 +22,6 @@ public class EmpMonthlySalary {
                     break;
             }
         }
-            System.out.println("Employee monthly Salary = " + wagePerHrs * empHrs * totalWorkingDays);
+           System.out.println("Employee's total Wage = "+totalWage);
     }
 }
